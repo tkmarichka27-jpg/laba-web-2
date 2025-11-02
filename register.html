@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма реєстрації | The Beatles</title>
+    <link rel="stylesheet" href="StyleSheet_laba1.css">
+</head>
+<body>
+    <h1 class="header"> Реєстрація </h1>
+
+    <div class="form-container">
+        <div class="form-title">Форма реєстрації</div>
+
+        <form class="registration-grid">
+            <div class="col-left">
+                <label for="name">Ім'я</label>
+                <input type="text" id="name" name="name" placeholder="Ім'я">
+
+                <label for="surname">Прізвище</label>
+                <input type="text" id="surname" name="surname" placeholder="Прізвище">
+
+                <label>Стать</label>
+                <div class="radio-group">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Чоловіча</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Жіноча</label>
+                </div>
+
+                <label for="age">Вік</label>
+                <input type="number" id="age" name="age" min="16" max="99" value="16">
+
+                <label for="dob">Дата народження</label>
+                <input type="date" id="dob" name="dob">
+            </div>
+
+            <div class="col-right">
+                <label for="country">Країна проживання</label>
+                <select id="country" name="country">
+                    <option>Оберіть країну проживання</option>
+                    <option value="UA">Україна</option>
+                    <option value="PL">Польща</option>
+                </select>
+
+                <label for="phone">Номер телефону</label>
+                <input type="tel" id="phone" name="phone" placeholder="+38(0XX)XXX-XX-XX">
+
+                <label for="social">Соцмережа</label>
+                <input type="url" id="social" name="social" placeholder="Посилання на соц.мережу">
+
+                <label for="email">Електронна пошта</label>
+                <input type="email" id="email" name="email" placeholder="Ел. пошта">
+
+                <label for="password">Пароль</label>
+                <input type="password" id="password" name="password" placeholder="Пароль">
+            </div>
+
+            <div class="form-footer">
+                <div class="checkbox-group">
+                    <input type="checkbox" id="terms" name="terms">
+                    <label for="terms">Чи згодні Ви з умовами?</label>
+                </div>
+
+                <div class="button-group">
+                    <button type="submit" class="btn-submit">Зареєструватися</button>
+                    <button type="button" class="btn-cancel">Відміна</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

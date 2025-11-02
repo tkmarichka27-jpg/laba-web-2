@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма зворотного зв'язку | The Beatles</title>
+    <link rel="stylesheet" href="StyleSheet_laba1.css">
+</head>
+<body>
+    <h1 class="header"> Зворотний зв'язок </h1>
+
+    <div class="feedback-container">
+        <h2 class="feedback-title">Форма зворотного зв'язку:</h2>
+        <form class="feedback-grid">
+            <div class="col-left-feedback">
+                <label for="feedback-name" class="visually-hidden">Ім'я</label>
+                <input type="text" id="feedback-name" name="name" placeholder="Ім'я" required>
+
+                <label for="feedback-email" class="visually-hidden">Ел. пошта</label>
+                <input type="email" id="feedback-email" name="email" placeholder="Ел. пошта" required>
+
+                <label for="feedback-subject" class="visually-hidden">Тема повідомлення</label>
+                <select id="feedback-subject" name="subject" required>
+                    <option value="" disabled selected>Тема повідомлення</option>
+                    <option value="question">Запитання</option>
+                    <option value="support">Підтримка</option>
+                    <option value="offer">Пропозиція</option>
+                </select>
+
+                <button type="submit" class="btn-send">Відправити</button>
+            </div>
+
+            <div class="col-right-feedback">
+                <label for="feedback-message">Повідомлення</label>
+                <textarea id="feedback-message" name="message" rows="10" placeholder="" required></textarea>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
