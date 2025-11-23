@@ -12,7 +12,7 @@ body {
     margin-bottom: 20px;
     font-family: 'Great Vibes', cursive;
     font-size: 70px;
-    color: darkblue;
+    color: darkred;
     text-shadow: 2px 2px #d8baba;
 }
 
@@ -48,21 +48,21 @@ body {
     max-width: 1000px;
 }
 
-    .links a, .forms-links a {
-        text-decoration: none;
-        color: black;
-        font-family: 'Oswald';
-        padding: 5px 15px;
-        margin: 0 15px;
-        transition: 0.3s ease;
-        border-left: 2px solid black;
-        border-right: 2px solid black;
-        display: inline-block;
-    }
+.links a, .forms-links a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Oswald';
+    padding: 5px 15px;
+    margin: 0 15px;
+    transition: 0.3s ease;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    display: inline-block;
+}
 
-        .links a:hover, .forms-links a:hover {
-            color: darkred;
-        }
+.links a:hover, .forms-links a:hover {
+    color: darkred;
+}
 
 .story {
     border-top: 5px solid black;
@@ -70,12 +70,12 @@ body {
     padding: 20px 0;
 }
 
-    .story p {
-        padding: 0 20px;
-        font-size: 18px;
-        max-width: 100%;
-        text-align: justify;
-    }
+.story p {
+    padding: 0 20px;
+    font-size: 18px;
+    max-width: 100%;
+    text-align: justify;
+}
 
 .logo {
     float: right;
@@ -98,11 +98,11 @@ body {
     position: relative;
 }
 
-    .facts-text-wrap p {
-        font-size: 18px;
-        text-align: justify;
-        margin-bottom: 20px;
-    }
+.facts-text-wrap p {
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
 
 .img-float-left {
     float: left;
@@ -188,15 +188,17 @@ body {
     margin-left: auto;
 }
 
-    .video iframe {
-        margin: 10px 30px;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    }
+.video iframe {
+    margin: 10px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
 
 .table {
     border-top: 5px solid black;
     text-align: center;
+    overflow-x: auto; 
+    padding-bottom: 10px;
 }
 
 table {
@@ -208,6 +210,8 @@ table {
     border-collapse: collapse;
     border: 2px solid black;
     font-size: 18px;
+    /* Забезпечуємо, що таблиця не стискається на мобільному, щоб прокручуватися */
+    min-width: 600px; 
 }
 
 td, th {
@@ -243,9 +247,9 @@ th {
     transition: transform 0.3s ease;
 }
 
-    .contacts img:hover {
-        transform: scale(1.1);
-    }
+.contacts img:hover {
+    transform: scale(1.1);
+}
 
 /* СТИЛІ ДЛЯ ФОРМИ РЕЄСТРАЦІЇ */
 
@@ -274,7 +278,6 @@ th {
     padding-bottom: 10px;
 }
 
-/* СІТКА ФОРМИ */
 .registration-grid {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Дві однакові колонки */
@@ -363,21 +366,21 @@ th {
 }
 
 .btn-submit {
-    background-color: #4CAF50; /* Зелений */
+    background-color: #4CAF50; 
     color: white;
 }
 
 .btn-submit:hover {
-    background-color: #45a049; /* Темніший зелений при наведенні */
+    background-color: #45a049; 
 }
 
 .btn-cancel {
-    background-color: #f44336; /* Червоний */
+    background-color: #f44336; 
     color: white;
 }
 
 .btn-cancel:hover {
-    background-color: #d32f2f; /* Темніший червоний при наведенні */
+    background-color: #d32f2f; 
 }
 
 /* СТИЛІ ДЛЯ ФОРМИ ВХОДУ */
@@ -387,7 +390,7 @@ th {
     margin: 30px auto;
     padding: 30px;
     background-color: #e6ffe6; 
-    border: 3px solid #8bc34a; /* Рамка */
+    border: 3px solid #8bc34a;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     display: flex;
@@ -410,22 +413,22 @@ th {
     gap: 15px;
 }
 
-    .login-form-content label {
-        font-weight: bold;
-        color: #388e3c;
-        margin-bottom: -10px;
-    }
+.login-form-content label {
+    font-weight: bold;
+    color: #388e3c;
+    margin-bottom: -10px;
+}
 
-    .login-form-content input[type="text"],
-    .login-form-content input[type="password"] {
-        padding: 12px;
-        border: 1px solid #a5d6a7;
-        border-radius: 5px;
-        box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
-        font-size: 16px;
-        width: 100%;
-        box-sizing: border-box;
-    }
+.login-form-content input[type="text"],
+.login-form-content input[type="password"] {
+    padding: 12px;
+    border: 1px solid #a5d6a7;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
 
 .btn-login {
     padding: 10px 30px;
@@ -441,10 +444,10 @@ th {
     align-self: center;
 }
 
-    .btn-login:hover {
-        background-color: #388e3c;
-        color: white;
-    }
+.btn-login:hover {
+    background-color: #388e3c;
+    color: white;
+}
 
 /* СТИЛІ ДЛЯ ФОРМИ ЗВОРОТНОГО ЗВ'ЯЗКУ */
 .feedback-container {
@@ -529,10 +532,10 @@ th {
     width: 150px;
 }
 
-    .btn-send:hover {
-        background-color: #a08000;
-        color: white;
-    }
+.btn-send:hover {
+    background-color: #a08000;
+    color: white;
+}
 
 .visually-hidden {
     position: absolute;
@@ -543,4 +546,143 @@ th {
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     border: 0;
+}
+
+/* МЕДІА-ЗАПИТИ ДЛЯ АДАПТИВНОСТІ */
+
+/* 1. Адаптація для планшетів (max-width: 900px) */
+@media (max-width: 900px) {
+    
+    .header {
+        font-size: 55px;
+    }
+
+    /* Адаптація розділу "Склад гурту" - перехід у вертикальний стовпчик (Flexbox) */
+    .team {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .teama {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .team ul {
+        max-width: 100%;
+        text-align: left;
+        margin: 0 auto;
+    }
+
+    /* Адаптація розділу "Факти" - перехід у вертикальний стовпчик (Flexbox/Grid) */
+    .facts-content {
+        flex-direction: column;
+    }
+
+    .facts-text-wrap, .facts-absolute-wrap {
+        width: 100%; /* Повна ширина */
+    }
+
+    /* Ховаємо стос картинок, оскільки він заважає на планшетах */
+    .img-stack {
+        display: none;
+    }
+    
+    .facts-absolute-wrap {
+        height: auto; /* Скидаємо фіксовану висоту */
+    }
+
+    /* Адаптація форми реєстрації (Grid) */
+    .registration-grid {
+        grid-template-columns: 1fr; /* Одна колонка */
+    }
+
+    .form-footer {
+        grid-column: 1 / 2; /* Розтягуємо на одну колонку */
+    }
+
+    /* Адаптація форми зворотного зв'язку (Grid) */
+    .feedback-grid {
+        grid-template-columns: 1fr; /* Одна колонка */
+    }
+
+    /* Кнопка "Відправити" тепер по ширині */
+    .btn-send {
+        width: 100%;
+        align-self: auto;
+    }
+}
+
+/* 2. Адаптація для вузьких екранів (mobile landscape / smaller tablets - max-width: 768px) */
+@media (max-width: 768px) {
+    
+    /* Адаптація відео - робимо їх меншими */
+    .video iframe {
+        max-width: 95%;
+        height: 250px;
+        margin: 10px auto;
+        display: block;
+    }
+}
+
+/* 3. Адаптація для мобільних телефонів (max-width: 580px) */
+@media (max-width: 580px) {
+    
+    .header {
+        font-size: 40px;
+    }
+
+    /* Адаптація основної навігації - вертикальний стовпчик */
+    .links a, .forms-links a {
+        display: block; /* Кожен лінк на новому рядку */
+        margin: 5px 0;
+        padding: 10px 0;
+        border-left: none; /* Прибираємо вертикальні роздільники */
+        border-right: none;
+        border-bottom: 1px solid #ccc;
+    }
+
+    /* Адаптація логотипа в історії */
+    .logo {
+        float: none; /* Скасовуємо обтікання */
+        margin: 10px auto;
+        display: block; /* Центруємо його */
+        width: 100%;
+        height: auto;
+        max-width: 250px;
+    }
+
+    /* Прибираємо обтікання зображень у "Фактах" */
+    .img-float-left, .img-float-right {
+        float: none;
+        margin: 10px auto;
+        display: block;
+    }
+
+    /* Адаптація футера (контакти) - вертикальний стовпчик */
+    .contacts {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 0;
+    }
+
+    .copyright, .site, .inst {
+        margin: 5px 0;
+        text-align: center;
+    }
+
+    .copyright p {
+        margin: 5px 0;
+    }
+
+    .button-group {
+        flex-direction: column; /* Кнопки реєстрації вертикально */
+        width: 100%;
+        align-self: center;
+    }
+
+    .btn-submit, .btn-cancel {
+        width: 100%;
+    }
 }
